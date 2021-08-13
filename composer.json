@@ -1,0 +1,24 @@
+{
+  "name": "funson86/yii2-websocket",
+  "description": "yii2 websocket based on workerman",
+  "keywords": ["yii", "yii2", "workerman", "websocket", "php", "funson86"],
+  "authors": [
+      {
+          "name": "funson86",
+          "email": "funson86@gmail.com"
+      }
+  ],
+  "type": "yii2-extension",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/funson86/yii2-websocket",
+  "require": {
+      "php": ">=7.0",
+      "workerman/workerman": "^4.0",
+      "workerman/gateway-worker": "^3.0"
+  },
+  "autoload": {
+      "psr-4": {
+          "funson86\\websocket\\": "./src"
+      }
+  }
+}

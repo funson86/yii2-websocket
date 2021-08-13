@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+ws = new WebSocket("ws://127.0.0.1:2000");
+ws.onopen = function() {
+    console.log("连接成功");
+    ws.send('tom');
+    console.log("给服务端发送一个字符串：tom");
+};
+ws.onmessage = function(e) {
+    console.log("收到服务端的消息：" + e.data);
+};
+
+setTimeout(function() {
+	console.log("给服务端发送一个字符串: 10s");
+	ws.send('10s');
+}, 10000);
+
+</script>
+</body>
+</html>
