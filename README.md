@@ -1,4 +1,4 @@
-## Yii2 WebSocket
+## Yii2 WebSocket 基于Workerman，带聊天室样例
 
 简单演示，正式项目请参考Funboot的chat聊天室如何和Yii2紧密结合
 
