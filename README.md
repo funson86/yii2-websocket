@@ -7,6 +7,10 @@
 在使用中有疑问欢迎在QQ群众反馈 QQ群：[798843502](https://jq.qq.com/?_wv=1027&k=9Hw7mPGf)
 
 
+### 演示聊天室地址
+
+- https://chat.funboot.net/
+
 ### 安装
   
 composer执行
