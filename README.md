@@ -18,7 +18,7 @@ composer require funson86/yii2-websocket
 或者在 `composer.json` 加入
 
 ```
-"funson86/yii2-websocket": "^1.0"
+"funson86/yii2-websocket": "^1.0",
 ```
 
 也可以直接加入workerman的扩展
@@ -32,7 +32,7 @@ composer require workerman/gateway-worker
 
 ```
       "workerman/workerman": "^4.0",
-      "workerman/gateway-worker": "^3.0"
+      "workerman/gateway-worker": "^3.0",
 ```
 
 ### 演示
@@ -51,8 +51,17 @@ composer require workerman/gateway-worker
 
 ### 最佳实践
 
-可以参考Funchat基于workerman和Yii2结合实现有历史记录的聊天室
+可以参考Funchat基于workerman和Yii2结合实现有历史消息的聊天室
 
+将backend common console web 拷贝到目录下，在每个目录的main.php中添加
+
+```
+        'chat' => [
+            'class' => 'frontend\modules\chat\Module',
+        ],
+```
+
+具体参考 https://github.com/funson86/funboot/blob/master/docs/guide-zh-CN/dev-websocket.md
 
 ![](images/websocket-chat-room.png)
 
