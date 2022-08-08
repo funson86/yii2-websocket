@@ -43,7 +43,7 @@ composer require workerman/gateway-worker
 
 将WebsocketController.php拷贝到yii2项目的console/controllers目录下
 
-命令行下执行执行 php yii websockt
+命令行下执行执行 php yii websockt start
 
 ![](images/websocket-cmd.png)
 
@@ -63,6 +63,10 @@ composer require workerman/gateway-worker
         'chat' => [
             'class' => 'frontend\modules\chat\Module',
         ],
+```
+
+```
+php yii chat/server start
 ```
 
 具体参考 https://github.com/funson86/funboot/blob/master/docs/guide-zh-CN/dev-websocket.md
